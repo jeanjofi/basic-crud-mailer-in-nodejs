@@ -1,0 +1,45 @@
+{
+  "name": "test-bookshelf-postgres",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "cross-env NODE_ENV=development nodemon server --ignore dist/",
+    "lint": "jshint .",
+    "validate": "npm ls"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "dependencies": {
+    "async": "^2.1.4",
+    "bluebird": "^3.4.7",
+    "body-parser": "^1.15.2",
+    "bookshelf": "^0.10.2",
+    "compression": "^1.6.2",
+    "cross-env": "^3.1.4",
+    "dotenv": "^4.0.0",
+    "express": "^4.14.0",
+    "knex": "^0.12.6",
+    "lodash": "^4.16.6",
+    "nodemailer": "^4.4.2",
+    "path": "^0.12.7",
+    "pg": "^6.1.2",
+    "socket.io": "^1.7.2",
+    "winston": "^2.3.1",
+    "winston-daily-rotate-file": "^1.4.4",
+    "winston-request-logger": "^1.0.7"
+  },
+  "devDependencies": {
+    "eslint": "^3.12.0",
+    "eslint-watch": "^2.1.14",
+    "webpack": "^1.13.2",
+    "precommit-hook": "^3.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jeanjofi/basic-crud-mailer-in-nodejs.git"
+  },
+  "author": "Jean Jofi",
+  "license": "ISC"
+}

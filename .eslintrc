@@ -1,0 +1,39 @@
+{
+  "env": {
+    "node": true,
+	"es6": true
+  },
+  "rules": {
+    "no-console": "off",
+    "no-mixed-spaces-and-tabs": "error",
+    "no-unused-expressions": [
+      "error",
+      {
+        "allowShortCircuit": true,
+        "allowTernary": true
+      }
+    ],
+    "no-unused-vars": [
+      0,
+      {
+        "vars": "all",
+        "args": "none"
+      }
+    ],
+    "indent": [
+      "error",
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "max-len": [
+      "error",
+      120,
+      {
+        "ignoreComments": true,
+        "ignoreTemplateLiterals": true
+      }
+    ]
+  }
+}
